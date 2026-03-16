@@ -44,14 +44,14 @@ const Footer = () => {
 
         {/* Copyright Bar */}
         <div className="mt-10 pt-6 border-t border-dark-foreground/10 text-center text-xs text-dark-foreground/40">
-          © {currentYear} Art's Automotive Service Centre. All rights reserved. | Website Launch by{" "}
+          © {currentYear} Art's Automotive Service Centre. All rights reserved. | Web Design by{" "}
           <a
-            href="https://swiftlift.app"
+            href="https://sonykundesign.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
           >
-            SwiftLift
+            Sonykun Design
           </a>
         </div>
       </div>
