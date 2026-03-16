@@ -75,7 +75,7 @@ const Navbar = () => {
         </div>
 
         {mobileOpen && (
-          <div className="md:hidden bg-secondary border-t border-secondary-foreground/10 pb-4 px-4">
+          <div className="md:hidden bg-white border-t border-border pb-4 px-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
