@@ -66,7 +66,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden p-2 text-secondary-foreground"
+            className="md:hidden p-2 text-gray-800"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
