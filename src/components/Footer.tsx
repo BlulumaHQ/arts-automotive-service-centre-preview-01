@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Logo & Description */}
           <div>
-            <img src="/images/logo.png" alt="Art's Automotive Service Centre" className="h-10 w-auto mb-4 brightness-0 invert" />
+            <img src="/images/logo.png" alt="Art's Automotive Service Centre" className="h-10 w-auto mb-4" />
             <p className="text-sm text-dark-foreground/70">
               Professional automotive repair services in Vancouver since 1996. Good & honest auto repair you can trust.
             </p>
@@ -44,14 +44,14 @@ const Footer = () => {
 
         {/* Copyright Bar */}
         <div className="mt-10 pt-6 border-t border-dark-foreground/10 text-center text-xs text-dark-foreground/40">
-          © {currentYear} Art's Automotive Service Centre. All rights reserved. | Website Launch by{" "}
+          © {currentYear} Art's Automotive Service Centre. All rights reserved. | Web Design by{" "}
           <a
-            href="https://swiftlift.app"
+            href="https://sonykundesign.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
           >
-            SwiftLift
+            Sonykun Design
           </a>
         </div>
       </div>
