@@ -2,31 +2,52 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="bg-surface py-24">
-      <div className="container mx-auto px-4 lg:px-8">
-        <motion.div
-          className="max-w-[65ch] mx-auto"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
-        >
-          <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full font-sans text-sm font-medium mb-8">
-            Since 1985
-          </div>
-          <h2 className="font-display text-foreground text-4xl mb-6">About Art's Auto</h2>
-          <div className="space-y-4 text-muted-foreground font-sans text-lg text-left">
-            <p>
-              At Art's Auto, we've been providing Winnipeg with reliable automotive repair services for over 35 years. Our experienced team of certified technicians is committed to keeping your vehicle running safely and efficiently.
-            </p>
-            <p>
-              We understand that car troubles can be stressful and inconvenient. That's why we work hard to provide honest, affordable solutions that get you back on the road quickly.
-            </p>
-            <p>
-              Our commitment to quality workmanship and customer satisfaction has made us a trusted name in Winnipeg's automotive repair industry.
-            </p>
-          </div>
-        </motion.div>
+    <section className="bg-background py-20">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              src="/images/shop-exterior.png"
+              alt="Art's Automotive Service Centre exterior"
+              className="rounded-lg shadow-card w-full h-auto"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <h2 className="text-foreground text-3xl lg:text-4xl mb-6 uppercase">
+              About <span className="text-primary">Art's Automotive</span>
+            </h2>
+            <div className="space-y-4 text-muted-foreground text-base">
+              <p>
+                For over 28 years Art's Automotive has been taking care of all their customer's vehicle repair needs. We can proudly say that if you try us once you will never take your car anywhere else.
+              </p>
+              <p>
+                It's always a bad day when your car breaks down, we can help by fixing it right the first time! Give us a call at (604) 879-8555 for an estimate or to get additional information about our services.
+              </p>
+              <p>
+                Let Art and his crew get you back on the road fast.
+              </p>
+            </div>
+
+            <div className="mt-8">
+              <img
+                src="/images/bccaa-approved.jpg"
+                alt="BCCAA Approved Auto Repair Services"
+                className="h-20 w-auto"
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
