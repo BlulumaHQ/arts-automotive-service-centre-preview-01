@@ -35,7 +35,7 @@ const Navbar = () => {
 
       {/* Main Nav */}
       <nav className="sticky top-0 z-50 bg-white shadow-card">
-        <div className="container mx-auto flex items-center justify-between h-20 px-4">
+        <div className="container mx-auto flex items-center justify-between py-3 px-4">
           <Link to="/" className="flex items-center gap-3">
             <img src="/images/logo.png" alt="Art's Automotive Service Centre" className="h-20 w-auto" />
           </Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 className={`px-4 py-2 text-sm font-bold uppercase tracking-wider transition-colors duration-200 ${
                   location.pathname === link.path
                     ? "text-primary"
-                    : "text-secondary-foreground hover:text-primary"
+                    : "text-gray-800 hover:text-primary"
                 }`}
               >
                 {link.label}
