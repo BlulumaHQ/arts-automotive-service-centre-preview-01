@@ -84,7 +84,7 @@ const Navbar = () => {
                 className={`block py-3 text-sm font-bold uppercase tracking-wider transition-colors ${
                   location.pathname === link.path
                     ? "text-primary"
-                    : "text-secondary-foreground"
+                    : "text-gray-800"
                 }`}
               >
                 {link.label}
