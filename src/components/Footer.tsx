@@ -53,7 +53,7 @@ const Footer = () => {
           >
             Sonykun Design
           </a>
-        </div>
+        {" "}<span className="block mt-1 opacity-80" data-concept-note>Design concept for portfolio purposes only. Not the official website of Art's Automotive Service Centre.</span></div>
       </div>
     </footer>
   );
